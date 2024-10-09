@@ -48,7 +48,7 @@ You need to create an application that supports the following features:
 
 1. **Quick learning and application of unfamiliar technologies**:
    - Use **Svelte 5** to build the application, including the newly introduced concepts such as runes, `$state`, and `$effect` to handle reactivity.
-   - For the backend, mock any necessary API calls using **Flask** and **Python** to serve dummy data.
+   - For the backend, mock any necessary API calls using **Express.js**, **Flask/Python**, or a technology of your choice to serve dummy data.
    - You may use **Tailwind CSS** or any component library you’re familiar with for styling.
 
 2. **Simplicity and capability**:
