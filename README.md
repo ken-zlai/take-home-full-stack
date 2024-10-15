@@ -19,9 +19,9 @@ graph LR
 
 Each node in the DAG contains the following information:
 
-- `node_type`: One of four fixed types: `TYPE_1`, `TYPE_2`, `TYPE_3`, `TYPE_4`
 - `node_name`: A unique identifier for the node (e.g., `A`, `B`, `C`), which will be displayed in the graph.
-- `tags`: A key-value map (`string-to-string`).
+- `node_type`: One of four fixed types: `TYPE_1`, `TYPE_2`, `TYPE_3`, `TYPE_4`
+- `tags`: An array of strings representing tags on this node.
 
 ---
 
@@ -48,7 +48,6 @@ You need to create an application that supports the following features:
 
 1. **Quick learning and application of unfamiliar technologies**:
    - Use **Svelte 5** to build the application, including the newly introduced concepts such as runes, `$state`, and `$effect` to handle reactivity.
-   - For the backend, mock any necessary API calls using **Express.js**, **Flask/Python**, or a technology of your choice to serve dummy data.
    - You may use **Tailwind CSS** or any component library you’re familiar with for styling.
 
 2. **Simplicity and capability**:
@@ -56,8 +55,12 @@ You need to create an application that supports the following features:
 
 3. **User Experience (UX) and Design**:
    - Design is a key aspect. We expect a clean, intuitive, and responsive user interface that enhances usability. Thoughtful consideration should be given to user interactions, layout, and overall experience.
+  
+4. **Simple Backend**:
+   - You may choose to use Express.js or simply a local TypeScript file to mock the backend responses. The backend's main purpose is to serve the DAG structure and node details, simulating an API response.
+   - **NOTE:** Deploying with certain backend technologies can be tricky. Keeping the backend simple will help avoid unnecessary complications.
 
-4. **Deployment**:
+6. **Deployment**:
    - Deploy the application to a platform like **Vercel** or any similar service. We want to see the app running in a production-like environment.
 
 ---
